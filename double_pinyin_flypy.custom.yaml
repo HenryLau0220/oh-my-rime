@@ -41,6 +41,7 @@ patch:
     show_in_comment: true  # 是否仅将转换结果显示在备注中
     comment_format:
       - "xform/&nbsp;/ /"
+      - "xform/\t/ /"
     tags:                  # 设置其作用范围
       - abc
       - storkfly
