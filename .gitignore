@@ -10,7 +10,8 @@ build
 *.userdb
 
 # 自定义文件
-*.custom.yaml
+# *.custom.yaml
+custom_phrase*.txt
 
 # VSCode 项目文件
 *.code-workspace

@@ -1,0 +1,4 @@
+# 注意，一个文件中只能有一个 patch
+patch:
+  schema_list:
+    - schema: double_pinyin_flypy  # 小鹤双拼
