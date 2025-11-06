@@ -35,7 +35,7 @@ patch:
   "engine/translators":
     - punct_translator                                   # ※ 轉換標點符號
     - script_translator
-    - lua_translator@*mint_date_time_translator          # 时间、日期、星期、月份
+    - lua_translator@*shijian                            # 时间、日期、星期、月份、问候、节气、节日，N模式
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
     - lua_translator@*mint_calculator_translator         # 计算器（lua 动态表达式）
