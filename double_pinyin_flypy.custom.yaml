@@ -196,3 +196,26 @@ patch:
     - smd	什么的
     - sms	什么是
     - sma	什么啊
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 英文 ]
+    - name: emoji_suggestion
+      states: [ "😣️","😁️"]
+      reset: 0
+    - name: full_shape
+      states: [ 半角, 全角 ]
+      reset: 0
+    - name: tone_display                  #开启后在输入编码的位置实时转换为带声调全拼，不开启则采用系统配置，影响的是preedit_format,归属：super_preedit.lua
+      states: [ 声杳, 声起 ]
+      reset: 0
+    - name: transcription
+      states: [ 简体 , 繁体 ]
+      reset: 0
+    - name: ascii_punct
+      states: [ "。，", "．，" ]
+      reset: 0
+    - name: chaifen        # 拆字滤镜
+      states: [ 🙈, 🐵 ]     # 快捷键 「Control+Shift+C」
+      reset: 0
+  "menu/page_size": 3
