@@ -159,8 +159,6 @@ patch:
     - bei	被
     - bie	别
     - bi	比
-    - bing	并
-    - na	那 哪 拿 呐
     - ni	你
     - ma	吗 嘛 妈
     - mei	没
@@ -181,6 +179,10 @@ patch:
     - na bian	那边 哪边
     - na bian er	那边儿 哪边儿
     - na wei	那位 哪位
+    - na zhang	那张 哪张
+    - na zhong	那种 哪种
+    # lian jie
+    - lian jie	连接 链接
     # 简码
     - zh	这
     - dd	等等

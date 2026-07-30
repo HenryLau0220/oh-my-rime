@@ -210,8 +210,18 @@ function M.func(input, env)
             -- 要置顶的放到 pined 中，其余的放到 others
             local idx = find_index(texts, cand.text)
             if idx ~= 0 then
-                pined[idx] = cand
-                pined_count = pined_count + 1
+                if pined[idx] == "" then
+                    -- 只在该置顶候选第一次出现时计数。
+                    -- 候选过滤器位于 uniquifier 之前，同一个文字可能由
+                    -- 不同翻译器或语言模型重复产生；重复候选不能让
+                    -- pined_count 提前达到目标，否则可能还没找到后续
+                    -- 置顶词就提前结束遍历。
+                    pined[idx] = cand
+                    pined_count = pined_count + 1
+                else
+                    -- 重复候选不再占用置顶位置，保留到普通候选中。
+                    table.insert(others, cand)
+                end
             else
                 table.insert(others, cand)
             end
